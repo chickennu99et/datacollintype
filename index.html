@@ -1,11 +1,24 @@
 <html>
   <body>
     <button id="clicks" onclick="l()">0</button>
+    shop
+    <button onclick="buy1()">buy level 1</button>
     <script>
+      var buys = 1;
+      var cost = 50;
       function l() {
         var clicks = Number(document.getElementById("clicks").innerText);
-        clicks = clicks + 1;
+        clicks = clicks + buys;
         document.getElementById("clicks").innerText = clicks;
+      }
+      function buy1()
+      {
+        if(clicks==cost)
+        {
+          cost = cost + 3;
+          buys++;
+          clicks = clicks - cost;
+        }
       }
     </script>
   </body>
