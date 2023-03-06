@@ -1,1 +1,27 @@
-
+<h1>!!!Under construction!!!</h1>
+<html>
+  <body>
+    <button id="clicks" onclick="l()">0</button>
+    <button onclick=buy()>buy</button>
+    <button href="https://chickennu99et.github.io/datacollintype/index.html">back to main menu</button>
+    <script>
+      var clicks = 0;
+      var buy = 1;
+      var cost = 50;
+      function l() {
+        var clicks = Number(document.getElementById("clicks").innerText);
+        clicks = clicks + 1;
+        document.getElementById("clicks").innerText = clicks;
+      }
+      function buy()
+      {
+        if(cost==clicks)
+        {
+          clicks = clicks - cost;
+          cost = cost + cost/10;
+          
+        }
+      }
+    </script>
+  </body>
+</html>
