@@ -1,1 +1,12 @@
-
+<html>
+  <body>
+    <button id="clicks" onclick="l()">0</button>
+    <script>
+      function l() {
+        var clicks = Number(document.getElementById("clicks").innerText);
+        clicks = clicks + 1;
+        document.getElementById("clicks").innerText = clicks;
+      }
+    </script>
+  </body>
+</html>
