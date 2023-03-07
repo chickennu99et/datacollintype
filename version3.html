@@ -1,1 +1,43 @@
-
+<h1>!!!Under Construction!!!</h1>
+<html>
+  <body>
+    <button id="clicks" onclick="l()">0</button>
+    <button onclick="purchase()">buy more clicks</button>
+    <button onclick="cpsbuy()">buy autoclickers</button>
+    <button href="https://chickennu99et.github.io/datacollintype/index.html">back to main menu</button>
+    <script>
+      var click = 0;
+      var buy = 1;
+      var cost = 50;
+      var clickspersecondtf = 0;
+      var cps = 0;
+      function l() {
+        click = click + buy;
+        document.getElementById("clicks").innerText = click;
+      }
+      function purchase()
+      {
+        if(click>=cost)
+        {
+          click = click - 50;
+          buy++;
+        }
+      }
+      function cpsbuy()
+      {
+        cps++;
+        clicks = clicks - 75;
+        if(clickspersecondtf=0)
+        {
+          clickspersecondtf++;
+          cpsstart();
+        }
+      }
+      function cpsstart()
+      {
+        click = click + cps;
+        setTimeout(1000)
+      }
+    </script>
+  </body>
+</html>
