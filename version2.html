@@ -2,22 +2,22 @@
 <html>
   <body>
     <button id="clicks" onclick="l()">0</button>
-    <button onclick=buy()>buy</button>
+    <button onclick="purchase()">buy</button>
     <button href="https://chickennu99et.github.io/datacollintype/index.html">back to main menu</button>
     <script>
-      let click = 0;
+      var click = 0;
       var buy = 1;
       var cost = 50;
       function l() {
         click = click + buy;
         document.getElementById("clicks").innerText = click;
       }
-      function buy()
+      function purchase()
       {
         if(click>=cost)
         {
           click = click - 50;
-          buy++;
+          lll();
         }
       }
     </script>
