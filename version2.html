@@ -9,14 +9,14 @@
       let buy = 1;
       let let cost = 50;
       function l() {
-        let click = click + buy;
+        click = click + buy;
         document.getElementById("clicks").innerText = click;
       }
       function buy()
       {
         if(click>=cost)
         {
-          let click = click - 50;
+          click = click - 50;
           buy++;
         }
       }
