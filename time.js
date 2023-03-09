@@ -42,3 +42,7 @@ return t;
 }
 
 Time();
+function uc()
+{  
+  alert("under construction");
+}
