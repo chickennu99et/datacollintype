@@ -25,18 +25,17 @@
       }
       function cpsbuy()
       {
-        cps++;
-        clicks = clicks - 75;
-        if(clickspersecondtf=0)
+        if(click>=75)
         {
-          clickspersecondtf++;
+          cps++;
+          clicks = clicks - 75;
           cpsstart();
         }
       }
       function cpsstart()
       {
         click = click + cps;
-        setTimeout(1000);
+        setTimeout(cpsstart ,3000);
       }
     </script>
   </body>
